@@ -4,7 +4,8 @@
 :root {
     --primary-color: #ffec4c;
     --scoundary-color: #ffd400;
-    --bg-color: #312f4c;
+    --bg-color: #425a5d;
+    --bg-volor-hover: #165057;
     --bg-color-scoundary: #e4e2fe;
     --bg-primary: #ffffff;
 }
@@ -26,11 +27,20 @@ body {
     font-family: "Sarabun", sans-serif;
     color: var(--primary-color);
     height: 100vh;
+    width: 100%;
+    font-size: 16px;
+}
+
+h1 {
+    display: inline;
+    font-size: 1rem;
+    margin: 0 1rem 0 0;
 }
 
 header {
     margin: 0 auto;
-    width: 100%;
+    max-width: 100%;
+    min-width: none;
     text-align: center;
     
 }
@@ -39,24 +49,32 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 100px;
+    max-width: 100%;
+    padding: 15px 2.5rem;
     background-color: var(--bg-color);
     color: var(--primary-color)
+}
+
+header nav .logo {
+    font-size: 2rem;
+    border-radius: 5%;
+    background-image: linear-gradient(var(--primary-color), var(--bg-color));
+    color: var(--bg-primary);
 }
 
 header nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
-    margin: 0 15px;
+    padding: 1rem 0;
+    margin: 0 1rem;
     color: black
 }
 
 header nav ul li {
     list-style: none;
-    margin: 15px 0;
-    font-size: 18px;
+    margin: 1rem 0;
+    font-size: 1rem;
 }
 
 header nav ul li a {
@@ -66,14 +84,47 @@ header nav ul li a {
     margin: 0 15px;
 }
 
-h1 {
-    display: inline-block;
-    font-size: 16px;
+header nav ul li a:hover {
+    color: var(--scoundary-color);
+    border-bottom: 2px solid var(--scoundary-color);
 }
+
+
+header nav .hamberger {
+    display: none;
+}
+
+header nav .hamberger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    header nav .hamberger {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+    }
+}
+
+
 
 details > summary {
     list-style: none;
     cursor: pointer;
+}
+
+details  p {
+    text-overflow: ellipsis;
+    padding: 0 1rem 0 1rem;
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 section {
@@ -86,7 +137,9 @@ section {
     padding: 15px 0;
     margin: 0 auto;
     width: 100%;
-    height: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     color: black
 }
@@ -116,58 +169,82 @@ section {
     object-position: 100% 10%;
 }
 
-.title {
-    margin: auto;
-    padding: 15px 0;
+.title > h1 {
+    display: block;
+    padding: 15px 15px;
+    font-size: 2rem;
     background-color: white;
     color: black
+}
+
+.title > a {
+    color: black
+    dis
+}
+
+.projects {
+    margin: 30px 0;
+    padding: 15px 0;
+    max-width: 100%;
 }
 
 .project {
     padding: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
     position: relative;
+}
 
+@media screen and (max-width: 900px) {
+    .project {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+.projects > h1 {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
 }
 
 .pro1 {
     padding: 15px 0;
-    background-color: white;
     color: black;
-    border: 1px solid black;
+    box-shadow: 10px 10px 5px var(--bg-color);
     
 } 
 
 .pro1 > img {
-    width: 300px;
-    height: 300px;
+    object-fit: cover;
+    object-position: 80% 20%;
 }
 
 .pro1 details {
     width: 300px;    
 }
 .pro1 details summary {
-    width: 150px;
+    width: 200px;
 }
 .pro2 {
     padding: 15px 0;
-    background-color: white;
     color: black;
-    border: 1px solid black;
+    box-shadow: 10px 10px 5px var(--bg-color);
     
 } 
 
 .pro2 > img {
-    width: 300px;
-    height: 300px;
+
+    object-fit: cover;
+    object-position: 1% 100%;
 }
 
 .pro3 > img {
-    width: 300px;
-    height: 300px;
+    object-fit: cover;
 }
 
 .pro2 details {
@@ -178,10 +255,8 @@ section {
 }
 .pro3 {
     padding: 15px 0;
-    background-color: white;
     color: black;
-    border: 1px solid black;
-    
+    box-shadow: 10px 10px 5px var(--bg-color);
 } 
 
 .pro3 details {
@@ -210,8 +285,6 @@ section {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: start;
-    
-    
 }
 
 .skillsandtools .detail .skills {
@@ -225,10 +298,67 @@ section {
     box-shadow: var(--bg-color);
 }
 
+@media screen and (max-width: 900px) {
+    .skillsandtools .detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
 .skill > h2 {
     padding: 15px 15px;
     font-size: 16px;
     text-align: start;
+}
+
+.contact {
+    margin: 0 auto;
+    padding: 15px 15px;
+    width: 100%;
+    height: fit-content;
+    background-color: transparent;
+    color: black;
+    box-shadow: var(--bg-color);
+    border: 1px solid black;
+}
+
+.contact .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: transparent;
+    color: black;
+    box-shadow: var(--bg-color);
+}
+
+.form label {
+    margin: 5px 15px;
+}
+
+.form label  input {
+    padding: 10px 10px;
+    margin: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.form > button {
+    padding: 5px 25px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    color: black
+}
+
+.form > button:hover {
+    background-color: var(--bg-volor-hover);
+    color: var(--bg-primary)
 }
 
 
