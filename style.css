@@ -26,20 +26,18 @@ html {
 body {
     font-family: "Sarabun", sans-serif;
     color: var(--primary-color);
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
     font-size: 16px;
 }
 
 h1 {
-    display: inline;
     font-size: 1rem;
     margin: 0 1rem 0 0;
 }
 
 header {
     margin: 0 auto;
-    max-width: 100%;
     min-width: none;
     text-align: center;
     
@@ -58,7 +56,9 @@ header nav {
 header nav .logo {
     font-size: 2rem;
     border-radius: 5%;
-    background-image: linear-gradient(var(--primary-color), var(--bg-color));
+    background: linear-gradient(to right, #15fece, #291efc, #f6ff00, #ff0000);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     color: var(--bg-primary);
 }
 
@@ -128,45 +128,79 @@ details  p {
 }
 
 section {
-    margin: 0 auto;
-    width: 70%;
+    width: 100%;
     text-align: center;
 }
 
 .container {
     padding: 15px 0;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    align-items: center;
     color: black
 }
 
 .about_me {
+    width: 100%;
+    height: 100vh;
+}
+
+.about_me .bg-image {
+    background-image: url("image/bg-image/bg-image-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    filter: blur(10px);
+    --webkit-filter: blur(10px);
+    height: 100vh;
+    width: 100%;
+}
+
+.about_me .content {
     font-family: "Sarabun", sans-serif;
-    padding: 15px 0;
     margin: 0 auto;
-    color: black
+    color: white;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
 }
 
-.about_me > h1 {
-    padding: 15px 0;
+
+.content > h1 {
+    padding: 15px 0 10px 0;
     text-align: center;
-    font-size: 24px;
+    font-size: 2rem;
 }
-.about_me > h2 {
+.content > h2 {
     text-align: center;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
-.about_me > img {
+.content > img {
     margin: 0 auto;
     display: block;
     border-radius: 50%;
     object-fit: cover;
     object-position: 100% 10%;
+}
+
+.content > button {
+    margin: 20px 0;
+    width: 25%;
+    padding: 15px 10px;
+    font-size: 1.5rem;
+    background-color: #010166;
+    color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #ffffff;
+
+}
+
+.content > button:hover {
+    background-color: #ffffff;
+    color: #010166;
+    border: 1px solid #000000
 }
 
 .title > h1 {
@@ -185,7 +219,8 @@ section {
 .projects {
     margin: 30px 0;
     padding: 15px 0;
-    max-width: 100%;
+    height: 100vh;
+    width: 100%;
 }
 
 .project {
@@ -194,10 +229,9 @@ section {
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
-    position: relative;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1070px) {
     .project {
         flex-direction: column;
         justify-content: center;
@@ -215,7 +249,7 @@ section {
 .pro1 {
     padding: 15px 0;
     color: black;
-    box-shadow: 10px 10px 5px var(--bg-color);
+    box-shadow: 10px 10px 10px var(--bg-color);
     
 } 
 
@@ -238,9 +272,8 @@ section {
 } 
 
 .pro2 > img {
-
     object-fit: cover;
-    object-position: 1% 100%;
+    object-position: 40% 80%;
 }
 
 .pro3 > img {
@@ -267,6 +300,65 @@ section {
 .pro3 details summary {
     width: 150px;
 }
+
+
+/* experience css */
+.experiences {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+.experiences .exp-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0;
+    
+}
+
+.experiences > h1 {
+    position: absolute;
+    top: -50px;
+    left: 44%;
+    font-size: 2rem;
+    text-align: center;
+    background: linear-gradient(to right,#00ce20, #ff2fce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.experiences > button {
+    width: 25%;
+    font-size: 1.5rem;
+    padding: 15px 0;
+    color: white;
+    background: linear-gradient(to right, #00007c, #03cde0, rgb(247, 220, 65));
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px var(--bg-color);
+}
+
+.experiences > button:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #ffffff, #ffffff, rgb(255, 255, 255));
+    color: black;
+    border: 1px solid black;
+
+}
+
+.experiences .exp-content .experience {
+    width: 100%;
+    margin: 0 20px;
+    padding: 15px 0;
+    color: black;
+    box-shadow: 0px 10px 20px var(--bg-color);
+    border: 1px solid black;
+}
+
+
+
 
 .skillsandtools {
     margin: 30px 0;
@@ -317,11 +409,11 @@ section {
     margin: 0 auto;
     padding: 15px 15px;
     width: 100%;
+    height: 100vh;
     height: fit-content;
-    background-color: transparent;
-    color: black;
+    background-color: #3d3d3d;
+    color: rgb(255, 255, 255);
     box-shadow: var(--bg-color);
-    border: 1px solid black;
 }
 
 .contact .form {
@@ -330,9 +422,9 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: fit-content;
+    height: 50vh;
     background-color: transparent;
-    color: black;
+    color: rgb(245, 245, 245);
     box-shadow: var(--bg-color);
 }
 
@@ -353,7 +445,7 @@ section {
     border-radius: 5px;
     border: 1px solid black;
     background-color: white;
-    color: black
+    color: rgb(0, 0, 0)
 }
 
 .form > button:hover {
