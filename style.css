@@ -383,6 +383,10 @@ details  p {
     border: 1px solid black;
 }
 
+.experience img {
+    object-fit: contain;
+    object-position: 50% 50%;
+}
 
 
 
