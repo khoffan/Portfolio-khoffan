@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --primary-color: #ffec4c;
+    --scoundary-color: #ffd400;
+    --bg-color: #425a5d;
+    --bg-volor-hover: #165057;
+    --bg-color-scoundary: #e4e2fe;
+    --bg-primary: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +18,7 @@
 }
 
 body, html {
+    font-family: "Sarabun", sans-serif;
     height: 100%;
     width: 100%;
     font-size: 16px;
@@ -91,15 +103,96 @@ header nav .hamberger div {
 }
 
 main {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
+    margin: 100px 0;
+}
+
+h1 {
+    display: block;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+h2 {
+    display: inline;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.experiences {
+    position: relative;
+    width: 50%;
+    font-size: 1rem;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+}
+
+
+.experiences > h1 {
+    position: absolute;
+    top: -50px;
+    left: 44%;
+    font-size: 2rem;
+    text-align: center;
+    background: linear-gradient(to right,#00ce20, #ff2fce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.experiences > button {
+    width: 25%;
+    font-size: 1.5rem;
+    padding: 15px 0;
+    color: white;
+    background: linear-gradient(to right, #00007c, #03cde0, rgb(247, 220, 65));
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px var(--bg-color);
+}
+
+.experiences > button:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #ffffff, #ffffff, rgb(255, 255, 255));
+    color: black;
+    border: 1px solid black;
+
+}
+
+
+
+.exp-content {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp-content .experience {
+    margin: 20px 0;
+}
+
+.experience > img {
+    object-fit: contain;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+
 }
 
 /* footer */
 
 footer {
     width: 100%;
-    height: initial ;
     text-align: center;
     background-color: rgb(71, 71, 71);
 }

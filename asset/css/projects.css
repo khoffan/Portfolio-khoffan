@@ -21,7 +21,9 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
+    min-height: 100%;
+    width: 100%;
     font-size: 16px;
     font-family: "Sarabun", sans-serif;
     margin: 0 auto;
@@ -29,10 +31,11 @@ body {
 
 header {
     margin: 0 auto;
-    max-width: 100%;
-    min-width: none;
+    min-width: 100%;
     text-align: center;
-    
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 header nav {
@@ -42,13 +45,16 @@ header nav {
     max-width: 100%;
     padding: 15px 2.5rem;
     background-color: var(--bg-color);
-    color: var(--primary-color)
+    color: var(--primary-color);
+    
 }
 
 header nav .logo {
     font-size: 2rem;
     border-radius: 5%;
-    background-image: linear-gradient(var(--primary-color), var(--bg-color));
+    background: linear-gradient(to right, #15fece, #291efc, #f6ff00, #ff0000);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     color: var(--bg-primary);
 }
 
@@ -103,10 +109,18 @@ header nav .hamberger div {
 }
 
 main {
-    margin: 0 auto;
+    margin: 100px auto;
     max-width: 100%;
-    min-width: none;
+    min-width: 25%;
     text-align: center;
+}
+
+section {
+    max-height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-family: "Sarabun", sans-serif;
+    margin: 0 auto;
 }
 
 section > h1 {
@@ -152,7 +166,7 @@ section > h1 {
 
 .project1 {
     margin: 1rem 1rem;
-    
+    padding: 1rem 1rem;
 }
 .project2 {
     margin: 1rem 1rem;
@@ -164,21 +178,21 @@ section > h1 {
 }
 
 .projects-detail .project1 > img {
-    border: 2px solid var(--scoundary-color);
+
     border-radius: 5%;
-    object-fit: cover;
-    object-position: 100% 10%;
+    object-fit: contain;
+    object-position: 50% 100%;
 }
 .projects-detail .project2 > img {
-    border: 2px solid var(--scoundary-color);
+
     border-radius: 5%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: 100% 10%;
 }
 .projects-detail .project3 > img {
-    border: 2px solid var(--scoundary-color);
+
     border-radius: 5%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: 100% 10%;
 }
 
@@ -194,16 +208,15 @@ section > h1 {
     padding: 1rem 1rem;
     width: 50%;
     height: fit-content;
-    align-self: center;
-    justify-self: flex-start;
+
+
 }
 
 .content  p {
     padding: 1rem 1rem;
-    width: 50%;
-    height: fit-content;
-    align-self: center;
-    justify-self: flex-start;
+    width: 75%;
+    text-align: start;
+
 }
 
 
@@ -211,7 +224,7 @@ section > h1 {
 
 footer {
     width: 100%;
-    height: initial ;
+    height: fit-content;
     text-align: center;
     background-color: rgb(71, 71, 71);
 }
