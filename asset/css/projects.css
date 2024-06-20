@@ -205,3 +205,35 @@ section > h1 {
     align-self: center;
     justify-self: flex-start;
 }
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: initial ;
+    text-align: center;
+    background-color: rgb(71, 71, 71);
+}
+
+footer .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    padding: 15px 15px;
+}
+
+footer .social > a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer .social > a > span {
+    margin: 0 20px;
+    padding: auto;
+}

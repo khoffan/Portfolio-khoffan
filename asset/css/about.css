@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+}
+
+
+header {
+    margin: 0 auto;
+    min-width: none;
+    text-align: center;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 15px 2.5rem;
+    background-color: var(--bg-color);
+    color: var(--primary-color)
+    
+}
+
+header nav .logo {
+    font-size: 2rem;
+    border-radius: 5%;
+    background: linear-gradient(to right, #15fece, #291efc, #f6ff00, #ff0000);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: var(--bg-primary);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    color: black
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 15px 0;
+    margin: 0 15px;
+}
+
+header nav ul li a:hover {
+    color: var(--scoundary-color);
+    border-bottom: 2px solid var(--scoundary-color);
+}
+
+
+header nav .hamberger {
+    display: none;
+}
+
+header nav .hamberger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+    header nav .hamberger {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+    }
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: initial ;
+    text-align: center;
+    background-color: rgb(71, 71, 71);
+}
+
+footer .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    padding: 15px 15px;
+}
+
+footer .social > a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer .social > a > span {
+    margin: 0 20px;
+    padding: auto;
+}
