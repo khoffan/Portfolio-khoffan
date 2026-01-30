@@ -25,7 +25,7 @@
 * **Key Contribution:** ออกแบบและพัฒนาโดยใช้เทคนิค **Server-driven UI** ซึ่งใช้ JSON จาก Backend มา Render หน้าจอ Flutter Web แบบ Dynamic ช่วยลดรอบการ Deployment เมื่อมีการแก้ไข UI
 * **Tech:** `Flutter Web`, `JSON-to-Code Architecture`
 
-### 🛒 [POS System (Point of Sale)](https://your-link-here.com)
+### 🛒 [POS System (Point of Sale)]
 * **Concept:** ระบบบริหารจัดการหน้าร้านแบบครบวงจร (Full-stack Implementation)
 * **Key Contribution:** ออกแบบ API Contract และ Database Schema เองทั้งหมด พัฒนา Backend ประสิทธิภาพสูงด้วยภาษา Go เพื่อจัดการสต็อกและยอดขายแบบ Real-time
 * **Tech:** `Go (Golang)`, `MongoDB`, `Flutter Web`
@@ -50,8 +50,8 @@
 
 ## 📫 Connect with Me
 * **Email:** [khoffan222@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=khoffan222@gmail.com)
-* **GitHub:** [github.com/your-username](https://github.com/your-username)
-* **Portfolio Web:** [Your Website Link](https://your-portfolio-link.com)
+* **GitHub:** [github.com/your-username](https://github.com/khoffan)
+* **Portfolio Web:** [Your Website Link](https://portfolio-khoffan.vercel.app/#home)
 
 ---
 *Generated with ❤️ by Gemini for Khoffan's Professional Identity*
