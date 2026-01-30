@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Khoffan Leemanan | Senior Full-stack Developer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
-      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
     />
     <link
       rel="shortcut icon"
@@ -25,182 +25,341 @@
   <body>
     <header>
       <nav>
-        <div class="logo">Portfolio</div>
-        <ul>
-          <li>
-            <a href="#about_me">Home</a><a href="#projects">Projects</a
-            ><a href="#experiences">Experiences</a
-            ><a href="#contact">Contact</a>
-          </li>
+        <div class="logo">Khoffan.dev</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact" class="btn-contact">Contact Me</a></li>
         </ul>
-        <div class="hamberger">
-          <div class="ham1"></div>
-          <div class="ham2"></div>
-          <div class="ham3"></div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
       </nav>
     </header>
-    <section>
-      <div class="container">
-        <div class="about_me" id="about_me">
-          <div class="bg-image"></div>
-          <div class="content">
-            <img src="image/contents/รูปถ่าย.jpg" width="150" height="150" />
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <span class="greeting">Hello, I'm</span>
             <h1>Khoffan Leemanan</h1>
-            <h2>Computer Enginerring</h2>
+            <h2 class="typing-text">Senior Full-stack Developer</h2>
             <p>
-              ผม ฆ๊อฟฟาน หลีมานัน <br />
-              วิศวกรรมคอมพิวเตอร์ จบการศึกษาที่มหาวิยาลัยสงขลานครินทร์
+              Specializing in <strong>Flutter</strong>, <strong>Go</strong>, and
+              <strong>Server-Driven UI</strong> architectures. I build scalable,
+              high-performance applications that bridge the gap between complex
+              backends and beautiful user interfaces.
             </p>
-            <button
-              type="button"
-              onclick="location.href = 'asset/page/about.html'"
-            >
-              See more
-            </button>
-          </div>
-        </div>
-        <div class="projects" id="projects">
-          <div class="title">
-            <h1>Projects</h1>
-            <p>
-              เป็นผลงานจากการทำโปรเจคจบการศึกษาที่มหาวิยาลัยสงขลานครินทร์
-              <br />และการฝึกฝนของตนเอง
-            </p>
-            <a href="asset/page/project.html">See More</a>
-          </div>
-
-          <div class="project">
-            <div class="pro1">
-              <img
-                src="image/contents/Purchase-asistant.png"
-                width="320"
-                height="320"
-              />
-              <details>
-                <summary>
-                  <h1>Purchase Assistant</h1>
-                </summary>
-                <p>
-                  เป็น Project
-                  เกียวกับการออกแบบและพัฒนาโปรเจคที่เป็นส่วนหนึ่งของการซื้อขายหรือใช้บริการภายในมหาวิทยาลัยโดยผู้ใช้งานสามารภเป็นได้ทั้งผู้ซื้อและผ๔็ให้ยริการได้
-                </p>
-              </details>
+            <div class="hero-btns">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-outline">Contact Me</a>
             </div>
-            <div class="pro2">
-              <img
-                src="image/contents/blogpostlogo.png"
-                width="320"
-                height="320"
-              />
-              <details>
-                <summary>
-                  <h1>Web Blogs</h1>
-                </summary>
-                <p>
-                  เป็น Web blogs
-                  สำหรับการเผยแพร่บทความในเว็บไซต์โดยผ฿้ใช้งานสามรภเพิ่มบทความได้ตาทที่ค้องการ
-                </p>
-              </details>
-            </div>
-            <div class="pro3">
-              <img
-                src="image/contents/portfolio.png"
-                width="320"
-                height="320"
-              />
-              <details>
-                <summary>
-                  <h1>Portfolio</h1>
-                </summary>
-                <p>
-                  เป็น website Portfolio ของผู้พัฒนาเว็บไซต์เอง
-                  ซึ่งมีการระบุข้อมูลของผู้พัฒนาเว็บไซต์
-                  และประสบการณ์ของผู้พัฒนา ซึ่งเป็นส่วนหนึ่งของผู้พัฒนา
-                </p>
-              </details>
+          </div>
+          <div class="hero-image">
+            <div class="image-wrapper">
+              <img src="image/contents/รูปถ่าย.jpg" alt="Khoffan Leemanan" />
             </div>
           </div>
         </div>
+      </section>
 
-        <div id="experiences"></div>
-        <section class="experiences">
-          <h1>Experiences</h1>
-          <div class="exp-content">
-            <!-- <div class="experience">
-						<img src="image/icon/gibthailogo.png" width="480" height="320" />
-						<h1>Internship</h1>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
-							corporis natus exercitationem deserunt distinctio ex iste minus quas
-							dolorum aliquid. Sed eligendi consequatur sequi atque vero soluta
-							officia debitis numquam, veritatis distinctio aliquam eius
-							architecto illum ea sapiente minima. Rerum, qui debitis? Vel qui
-							suscipit saepe et illo expedita commodi?
-						</p>
-					</div>
-					<div class="experience">
-						<img src="image/contents/site2024.jpg" width="480" height="320" />
-						<h1>SITE</h1>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
-							corporis natus exercitationem deserunt distinctio ex iste minus quas
-							dolorum aliquid. Sed eligendi consequatur sequi atque vero soluta
-							officia debitis numquam, veritatis distinctio aliquam eius
-							architecto illum ea sapiente minima. Rerum, qui debitis? Vel qui
-							suscipit saepe et illo expedita commodi?
-						</p>
-					</div> -->
-            <div class="experience">
-              <img
-                src="image\contents\logo-nicetynine.png"
-                width="480"
-                height="320"
-                alt="Front-end Developer"
-              />
-              <h1>Front-end Developer (Jan 2025 - Present)</h1>
+      <!-- About Section -->
+      <section id="about" class="section about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                I am a Computer Engineering graduate from Prince of Songkla
+                University with a passion for building robust software
+                solutions. Currently working as a
+                <strong>Front-end Developer (Flutter Specialist)</strong>, I
+                focus on designing system architectures that are not only
+                functional but also maintainable and scalable.
+              </p>
+              <p>
+                My expertise lies in
+                <strong>Server-Driven UI (SDUI)</strong>, ensuring seamless
+                updates and flexibility across platforms. I also possess strong
+                backend skills in <strong>Go (Golang)</strong> and
+                <strong>MongoDB</strong>, allowing me to contribute effectively
+                to full-stack development and API schema design.
+              </p>
             </div>
           </div>
-          <button onclick="location.href = 'asset/page/experience.html'">
-            See more
-          </button>
-        </section>
-
-        <div class="contact" id="contact">
-          <h1>Contact</h1>
-          <from action="submit" class="form">
-            <label for="name"
-              >Name:
-              <input type="text" name="name" id="name" placeholder="Name" />
-            </label>
-            <label for="email"
-              >Email:
-              <input type="email" name="email" id="email" placeholder="Email" />
-            </label>
-            <label for="phone"
-              >Phone:
-              <input type="text" name="phone" id="phone" placeholder="Phone" />
-            </label>
-            <button type="submit">Submit</button>
-          </from>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section skills">
+        <div class="container">
+          <h2 class="section-title">Technical Expertise</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <span class="material-symbols-outlined skill-icon">flutter</span>
+              <h3>Frontend & Mobile</h3>
+              <ul>
+                <li>Flutter (Expert)</li>
+                <li>ReactJS / VueJS</li>
+                <li>Server-Driven UI</li>
+                <li>State Management (Bloc/Riverpod)</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <span class="material-symbols-outlined skill-icon">dns</span>
+              <h3>Backend & Database</h3>
+              <ul>
+                <li>Go (Golang)</li>
+                <li>Node.js / NestJS / ExpressJS</li>
+                <li>MongoDB / Firebase</li>
+                <li>RESTful API Design</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <span class="material-symbols-outlined skill-icon">build</span>
+              <h3>Tools & Others</h3>
+              <ul>
+                <li>Git / GitHub</li>
+                <li>Docker / Kubernetes</li>
+                <li>TypeScript / JavaScript (ES6+)</li>
+                <li>JS Tools (Vite / Webpack / NPM)</li>
+                <li>Agile / Scrum</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="projects-grid">
+            <!-- Project 1: CMS -->
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="image/contents/blogpostlogo.png"
+                  alt="Custom CMS Project"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Custom CMS with Server-Driven UI</h3>
+                <span class="project-role">Lead Front-end Developer</span>
+                <p>
+                  <strong>Designed an innovative CMS architecture</strong> using
+                  Flutter Web, Go, and MongoDB. Implemented a Server-Driven UI
+                  Protocol (JSON-to-Widget) that allows administrators to modify
+                  layouts and logic in real-time, effectively reducing the
+                  deployment cycle.
+                </p>
+                <div class="tech-stack">
+                  <span>Flutter Web</span>
+                  <span>Go</span>
+                  <span>MongoDB</span>
+                  <span>SDUI</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Web Blog (New) -->
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="image/contents/blogpostlogo.png"
+                  alt="Web Blog Platform"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Interactive Web Blog Platform</h3>
+                <span class="project-role">Full-stack JavaScript Developer</span>
+                <p>
+                  <strong>Built a complete content management ecosystem</strong> leveraging
+                  the full potential of the JavaScript stack. Developed a scalable backend
+                  with <strong>Node.js (Express/NestJS)</strong> and a dynamic frontend
+                  using <strong>ReactJS/VueJS</strong>, featuring real-time content updates
+                  and a responsive reading experience.
+                </p>
+                <div class="tech-stack">
+                  <span>Node.js</span>
+                  <span>ReactJS/VueJS</span>
+                  <span>MongoDB</span>
+                  <span>Express/Nest</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: POS -->
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="image/contents/Purchase-asistant.png"
+                  alt="POS System"
+                />
+              </div>
+              <div class="project-content">
+                <h3>High-Performance POS System</h3>
+                <span class="project-role">Full-stack Developer</span>
+                <p>
+                  <strong>Engineered a robust Transaction System</strong>
+                  capable of handling high-concurrency requests using Go
+                  goroutines. Optimized MongoDB schemas for polymorphic product
+                  data, ensuring sub-200ms response times.
+                </p>
+                <div class="tech-stack">
+                  <span>Go</span>
+                  <span>MongoDB</span>
+                  <span>Flutter</span>
+                  <span>WebSocket</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: Healthcare -->
+            <article class="project-card">
+              <div class="project-image">
+                <img src="image/contents/portfolio.png" alt="Healthcare App" />
+              </div>
+              <div class="project-content">
+                <h3>Health Care Management Platform</h3>
+                <span class="project-role">Front-end Developer</span>
+                <p>
+                  <strong>Architected a precision-critical UI</strong> ensuring
+                  100% data integrity for personal health records. Collaborated
+                  closely with backend teams to design strict API Contracts and
+                  Type-Safe Data Models.
+                </p>
+                <div class="tech-stack">
+                  <span>Flutter</span>
+                  <span>API Design</span>
+                  <span>Data Visualization</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="section experience">
+        <div class="container">
+          <h2 class="section-title">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Jan 2025 - Present</div>
+              <div class="timeline-content">
+                <h3>Front-end Developer (Flutter Specialist)</h3>
+                <h4>Nicetynine</h4>
+                <p>
+                  Leading the frontend development of enterprise-scale
+                  applications using Flutter. Architecting Server-Driven UI
+                  systems and collaborating with cross-functional teams to
+                  deliver high-quality software solutions.
+                </p>
+              </div>
+            </div>
+            <!-- Add previous experience here if available -->
+             <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Previous</div>
+              <div class="timeline-content">
+                <h3>Internship</h3>
+                <h4>Company Name</h4>
+                 <p>
+                  Gained hands-on experience in software development lifecycles
+                  and contributed to real-world projects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-wrapper">
+            <div class="contact-info">
+              <h3>Let's Talk</h3>
+              <p>
+                Open for opportunities in Senior Full-stack Development or
+                Flutter Specialist roles.
+              </p>
+              <div class="info-item">
+                <span class="material-symbols-outlined">email</span>
+                <a href="mailto:your.email@example.com"
+                  >your.email@example.com</a
+                >
+              </div>
+              <div class="social-links">
+                <a href="https://github.com/khoffan" target="_blank"
+                  >GitHub</a
+                >
+                <a
+                  href="https://web.facebook.com/profile.php?id=100004634714548"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </div>
+            </div>
+            <form action="#" class="contact-form">
+              <div class="form-group">
+                <input type="text" id="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer>
-      <div class="social">
-        <a
-          href="https://web.facebook.com/profile.php?id=100004634714548"
-          target="_blank"
-          ><span class="material-symbols-outlined"> person </span>Facebook</a
-        >
-        <a href=""
-          ><span class="material-symbols-outlined"> photo_camera </span
-          >Instragram</a
-        >
-        <a href="https://github.com/khoffan" target="_blank"
-          ><span class="material-symbols-outlined"> public </span>Github</a
-        >
+      <div class="container">
+        <p>&copy; 2025 Khoffan Leemanan. All Rights Reserved.</p>
       </div>
     </footer>
+
+    <script>
+      // Simple Mobile Menu Toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+
+      // Close menu when clicking a link
+      document.querySelectorAll(".nav-links li a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+          hamburger.classList.remove("active");
+        });
+      });
+    </script>
   </body>
 </html>
