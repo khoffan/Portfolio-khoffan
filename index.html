@@ -295,8 +295,8 @@
               </p>
               <div class="info-item">
                 <span class="material-symbols-outlined">email</span>
-                <a href="mailto:your.email@example.com"
-                  >your.email@example.com</a
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khoffan222@gmail.com&su=ติดต่อเรื่องงาน" target="_blank"
+                  >khoffan222@gmail.com</a
                 >
               </div>
               <div class="social-links">
@@ -310,15 +310,16 @@
                 >
               </div>
             </div>
-            <form action="#" class="contact-form">
+            <form action="#" class="contact-form" id="my-google-form">
               <div class="form-group">
-                <input type="text" id="name" placeholder="Your Name" required />
+                <input type="text" id="name" placeholder="Your Name" name="name" required />
               </div>
               <div class="form-group">
                 <input
                   type="email"
                   id="email"
                   placeholder="Your Email"
+                  name="email"
                   required
                 />
               </div>
@@ -327,6 +328,7 @@
                   id="message"
                   rows="5"
                   placeholder="Your Message"
+                  name="message"
                   required
                 ></textarea>
               </div>
@@ -347,6 +349,29 @@
       // Simple Mobile Menu Toggle
       const hamburger = document.querySelector(".hamburger");
       const navLinks = document.querySelector(".nav-links");
+      const form = document.getElementById("my-google-form");
+      const script = "https://script.google.com/macros/s/AKfycbzx3stocoMNSTR9ptUdgouwELucj-eZ7AoDmIU2YWmxHInvGnC2iOuBCf6skW8sGCVgxw/exec"
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const btn =  form.querySelector("button");
+        btn.innerHTML = "Sending...";
+        btn.disabled = true;
+
+        fetch(script, {method: "POST", body: new FormData(form)})
+        .then(response => {
+          alert('บันทึกข้อมูลเรียบร้อยแล้ว!');
+          btn.disabled = false;
+          btn.innerText = 'Send Message';
+          form.reset();
+        })
+        .catch(error => {
+          console.error('Error!', error.message);
+          alert('เกิดข้อผิดพลาด!');
+          btn.disabled = false;
+        });
+        
+      })
 
       hamburger.addEventListener("click", () => {
         navLinks.classList.toggle("active");
