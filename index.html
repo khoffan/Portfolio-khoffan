@@ -115,7 +115,7 @@
               <span class="material-symbols-outlined skill-icon">dns</span>
               <h3>Backend & Database</h3>
               <ul>
-                <li>Go (Golang)</li>
+                <li>Go (Golang) / Python</li>
                 <li>Node.js / NestJS / ExpressJS</li>
                 <li>MongoDB / Firebase</li>
                 <li>RESTful API Design</li>
@@ -144,10 +144,7 @@
             <!-- Project 1: CMS -->
             <article class="project-card">
               <div class="project-image">
-                <img
-                  src="image/contents/blogpostlogo.png"
-                  alt="Custom CMS Project"
-                />
+                <img src="image/contents/cms-2.png" alt="Custom CMS Project" />
               </div>
               <div class="project-content">
                 <h3>Custom CMS with Server-Driven UI</h3>
@@ -178,13 +175,16 @@
               </div>
               <div class="project-content">
                 <h3>Interactive Web Blog Platform</h3>
-                <span class="project-role">Full-stack JavaScript Developer</span>
+                <span class="project-role"
+                  >Full-stack JavaScript Developer</span
+                >
                 <p>
-                  <strong>Built a complete content management ecosystem</strong> leveraging
-                  the full potential of the JavaScript stack. Developed a scalable backend
-                  with <strong>Node.js (Express/NestJS)</strong> and a dynamic frontend
-                  using <strong>ReactJS/VueJS</strong>, featuring real-time content updates
-                  and a responsive reading experience.
+                  <strong>Built a complete content management ecosystem</strong>
+                  leveraging the full potential of the JavaScript stack.
+                  Developed a scalable backend with
+                  <strong>Node.js (Express/NestJS)</strong> and a dynamic
+                  frontend using <strong>ReactJS/VueJS</strong>, featuring
+                  real-time content updates and a responsive reading experience.
                 </p>
                 <div class="tech-stack">
                   <span>Node.js</span>
@@ -195,13 +195,32 @@
               </div>
             </article>
 
-            <!-- Project 3: POS -->
+            <!-- Project 3: Python Automation (New) -->
             <article class="project-card">
               <div class="project-image">
                 <img
-                  src="image/contents/Purchase-asistant.png"
-                  alt="POS System"
+                  src="image/contents/hotkey_scrren.png"
+                  alt="Hotkey Automation Tool"
                 />
+              </div>
+              <div class="project-content">
+                <h3>Smart Hotkey Workflow Automator</h3>
+                <span class="project-role">Python Developer</span>
+                <p>
+                  <strong>Developed a desktop productivity tool</strong> that allows users to create custom hotkeys for complex workflows. Features a grouping system to trigger multiple applications or scripts simultaneously with a single keystroke, streamlining daily operations.
+                </p>
+                <div class="tech-stack">
+                  <span>Python</span>
+                  <span>System Automation</span>
+                  <span>GUI Development</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: POS -->
+            <article class="project-card">
+              <div class="project-image">
+                <img src="image/contents/pos-3.png" alt="POS System" />
               </div>
               <div class="project-content">
                 <h3>High-Performance POS System</h3>
@@ -224,16 +243,19 @@
             <!-- Project 4: Healthcare -->
             <article class="project-card">
               <div class="project-image">
-                <img src="image/contents/portfolio.png" alt="Healthcare App" />
+                <img src="image/contents/happo.png" alt="Healthcare App" />
               </div>
               <div class="project-content">
                 <h3>Health Care Management Platform</h3>
                 <span class="project-role">Front-end Developer</span>
                 <p>
-                  <strong>Architected a precision-critical UI</strong> ensuring
-                  100% data integrity for personal health records. Collaborated
-                  closely with backend teams to design strict API Contracts and
-                  Type-Safe Data Models.
+                  <strong
+                    >Architected a precision-critical UI and responsive
+                    UI</strong
+                  >
+                  ensuring 100% data integrity for personal health records.
+                  Collaborated closely with backend teams to design strict API
+                  Contracts and Type-Safe Data Models.
                 </p>
                 <div class="tech-stack">
                   <span>Flutter</span>
@@ -266,13 +288,13 @@
               </div>
             </div>
             <!-- Add previous experience here if available -->
-             <div class="timeline-item">
+            <div class="timeline-item">
               <div class="timeline-dot"></div>
               <div class="timeline-date">Previous</div>
               <div class="timeline-content">
                 <h3>Internship</h3>
                 <h4>Company Name</h4>
-                 <p>
+                <p>
                   Gained hands-on experience in software development lifecycles
                   and contributed to real-world projects.
                 </p>
@@ -295,14 +317,14 @@
               </p>
               <div class="info-item">
                 <span class="material-symbols-outlined">email</span>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=khoffan222@gmail.com&su=ติดต่อเรื่องงาน" target="_blank"
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=khoffan222@gmail.com&su=ติดต่อเรื่องงาน"
+                  target="_blank"
                   >khoffan222@gmail.com</a
                 >
               </div>
               <div class="social-links">
-                <a href="https://github.com/khoffan" target="_blank"
-                  >GitHub</a
-                >
+                <a href="https://github.com/khoffan" target="_blank">GitHub</a>
                 <a
                   href="https://web.facebook.com/profile.php?id=100004634714548"
                   target="_blank"
@@ -312,7 +334,13 @@
             </div>
             <form action="#" class="contact-form" id="my-google-form">
               <div class="form-group">
-                <input type="text" id="name" placeholder="Your Name" name="name" required />
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Your Name"
+                  name="name"
+                  required
+                />
               </div>
               <div class="form-group">
                 <input
@@ -332,7 +360,9 @@
                   required
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Send Message</button>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
             </form>
           </div>
         </div>
@@ -350,28 +380,28 @@
       const hamburger = document.querySelector(".hamburger");
       const navLinks = document.querySelector(".nav-links");
       const form = document.getElementById("my-google-form");
-      const script = "https://script.google.com/macros/s/AKfycbzx3stocoMNSTR9ptUdgouwELucj-eZ7AoDmIU2YWmxHInvGnC2iOuBCf6skW8sGCVgxw/exec"
+      const script =
+        "https://script.google.com/macros/s/AKfycbzx3stocoMNSTR9ptUdgouwELucj-eZ7AoDmIU2YWmxHInvGnC2iOuBCf6skW8sGCVgxw/exec";
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
-        const btn =  form.querySelector("button");
+        const btn = form.querySelector("button");
         btn.innerHTML = "Sending...";
         btn.disabled = true;
 
-        fetch(script, {method: "POST", body: new FormData(form)})
-        .then(response => {
-          alert('บันทึกข้อมูลเรียบร้อยแล้ว!');
-          btn.disabled = false;
-          btn.innerText = 'Send Message';
-          form.reset();
-        })
-        .catch(error => {
-          console.error('Error!', error.message);
-          alert('เกิดข้อผิดพลาด!');
-          btn.disabled = false;
-        });
-        
-      })
+        fetch(script, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            alert("บันทึกข้อมูลเรียบร้อยแล้ว!");
+            btn.disabled = false;
+            btn.innerText = "Send Message";
+            form.reset();
+          })
+          .catch((error) => {
+            console.error("Error!", error.message);
+            alert("เกิดข้อผิดพลาด!");
+            btn.disabled = false;
+          });
+      });
 
       hamburger.addEventListener("click", () => {
         navLinks.classList.toggle("active");
