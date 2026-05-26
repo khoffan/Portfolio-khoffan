@@ -37,6 +37,11 @@ body {
   overflow-x: hidden;
 }
 
+/* Prefer a Thai-friendly font when the page language is Thai */
+html[lang="th"] body {
+  font-family: "Sarabun", "Outfit", sans-serif;
+}
+
 ul {
   list-style: none;
 }
@@ -181,6 +186,32 @@ nav {
 .hamburger {
   display: none;
   cursor: pointer;
+}
+
+.lang-switch {
+  margin-left: 20px;
+}
+
+.lang-switch select {
+  background: transparent;
+  color: var(--light-text);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.lang-switch select option {
+  background: transparent;
+  color: var(--text-color);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.lang-switch select:focus {
+  outline: none;
+  border-color: var(--primary-color);
 }
 
 .bar {
@@ -598,6 +629,12 @@ footer {
     justify-content: center;
     transition: 0.4s;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .lang-switch {
+    position: absolute;
+    top: 18px;
+    right: 120px;
   }
 
   .nav-links.active {
