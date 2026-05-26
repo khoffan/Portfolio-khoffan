@@ -51,7 +51,7 @@
 ## 📫 Connect with Me
 * **Email:** [khoffan222@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=khoffan222@gmail.com)
 * **GitHub:** [github.com/khoffan](https://github.com/khoffan)
-* **Portfolio Web:** [Your Website Link](https://portfolio-khoffan.vercel.app/#home)
+* **Portfolio Web:** [Portfolio Website](https://portfolio-khoffan.vercel.app/#home)
 
 ---
 *Generated with ❤️ by Gemini for Khoffan's Professional Identity*
