@@ -32,7 +32,7 @@ On `DOMContentLoaded`, `i18n.js` walks the DOM and overwrites content based on a
 
 Consequences when editing content:
 
-- **Change copy in `i18n.js`, not only in `index.html`.** The HTML text is just a pre-JS fallback (useful for SEO/no-JS) and is replaced at runtime. Keep the HTML fallback in sync with the `en` strings when you change copy. Note that `hero.description` exists only in `i18n.js`.
+- **Change copy in `i18n.js`, not only in `index.html`.** The HTML text is just a pre-JS fallback (useful for SEO/no-JS) and is replaced at runtime. Keep the HTML fallback in sync with the `en` strings when you change copy.
 - Experience timeline keys are named per employer (`experience.<employer>.date/title/company/p1`), not by position, and entries are ordered newest first in the HTML. To add a job, add a new `.timeline-item` at the top and a matching key under both `en` and `th`.
 - Because `data-i18n` sets `textContent`, inline markup like `<strong>` in the HTML fallback is stripped once translations apply. Translation strings are plain text.
 - Lookup order is `translations[locale]` → `translations.en` → the key string itself. The `th` dictionary intentionally omits many keys (e.g. project `role` and `tech.N`), which fall back to English. A typo'd key renders the raw key on the page.
@@ -49,6 +49,7 @@ Consequences when editing content:
 
 ## Assets and SEO files
 
-- Images live under `image/` (`contents/` for project screenshots and the profile photo `รูปถ่าย.jpg`, `icon/` for favicons). The Thai filename is referenced by the hero `<img>` and the `og:image`/`twitter:image` meta tags — keep them in sync if renamed.
+- Images live under `image/` (`contents/` for project screenshots and the profile photo `รูปถ่าย.jpg`, `icon/` for favicons). The Thai filename is referenced by the hero `<img>`, and as an absolute percent-encoded URL by `og:image`, `twitter:image`, and the JSON-LD `image` in `<head>` — keep all of them in sync if renamed.
+- SEO lives in `<head>`: description/keywords, canonical URL, Open Graph/Twitter tags, and a schema.org `Person` JSON-LD block. The `<title>`, `og:title`, and `twitter:title` should match `meta.title` (en) in `i18n.js`, which overwrites `document.title` at runtime. Update `knowsAbout`/keywords when the skills or projects change, and bump `<lastmod>` in `sitemap.xml`.
 - `KHOFFAN-resume-thai.pdf` is linked from the nav by filename; update the resume by replacing the file in place.
 - `robots.txt` and `sitemap.xml` hardcode the Vercel domain. `google69a3806d4f00fee6.html` is a Google Search Console verification file and must stay at the root unchanged.

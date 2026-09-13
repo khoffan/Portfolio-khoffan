@@ -230,7 +230,7 @@
       footer: { copyright: "© 2025 Khoffan Leemanan. All Rights Reserved." },
       social: { github: "GitHub", facebook: "Facebook" },
       meta: {
-        title: "Khoffan Leemanan | Portfolio",
+        title: "Khoffan Leemanan | Full-stack Developer · Next.js & AI",
       },
       btn: {
         viewWork: "View My Work",
@@ -371,7 +371,7 @@
       footer: { copyright: "© 2025 Khoffan Leemanan. สงวนลิขสิทธิ์." },
       social: { github: "GitHub", facebook: "Facebook" },
       meta: {
-        title: "ผลงาน | Khoffan Leemanan",
+        title: "Khoffan Leemanan | นักพัฒนา Full-stack · Next.js & AI",
       },
       pages: { projectsTitle: "โปรเจค", experiencesTitle: "ประสบการณ์" },
     },
