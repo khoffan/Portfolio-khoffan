@@ -397,6 +397,24 @@ nav {
   transform: scale(1.05);
 }
 
+/* Stand-in for projects without a screenshot */
+.project-image--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--secondary-color), var(--dark-bg));
+}
+
+.project-image--placeholder .material-symbols-outlined {
+  font-size: 72px;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.project-card:hover .project-image--placeholder .material-symbols-outlined {
+  transform: scale(1.1);
+}
+
 .project-content {
   padding: 25px;
 }

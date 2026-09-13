@@ -118,16 +118,17 @@
             <div class="about-text">
               <p data-i18n="about.p1">
                 I am a Computer Engineering graduate from Prince of Songkla University with a
-                passion for building robust software solutions. Currently working as a
-                <strong>Front-end Developer (Flutter Specialist)</strong>, I focus on designing
-                system architectures that are not only functional but also maintainable and
-                scalable.
+                passion for building robust software solutions. As a
+                <strong>Full-stack Developer</strong>, I specialize in modern JavaScript and
+                TypeScript web development with <strong>Next.js</strong>, React, and Node.js,
+                designing system architectures that are functional, maintainable, and scalable.
               </p>
               <p data-i18n="about.p2">
-                My expertise lies in <strong>Server-Driven UI (SDUI)</strong>, ensuring seamless
-                updates and flexibility across platforms. I also possess strong backend skills in
-                <strong>Go (Golang)</strong> and <strong>MongoDB</strong>, allowing me to contribute
-                effectively to full-stack development and API schema design.
+                I actively use <strong>AI</strong> both to accelerate my development workflow and
+                to build smarter products, from a <strong>RAG chatbot powered by a local LLM</strong>
+                (Ollama) to NLP and OCR features in real applications. I also have a solid
+                background in Server-Driven UI (SDUI), backend development with Go and MongoDB, and
+                cross-platform apps with Flutter.
               </p>
             </div>
           </div>
@@ -140,13 +141,14 @@
           <h2 class="section-title" data-i18n="section.skills">Technical Expertise</h2>
           <div class="skills-grid">
             <div class="skill-card">
-              <span class="material-symbols-outlined skill-icon">flutter</span>
+              <span class="material-symbols-outlined skill-icon">devices</span>
               <h3 data-i18n="skills.frontendTitle">Frontend & Mobile</h3>
               <ul>
-                <li>Flutter (Expert)</li>
-                <li>ReactJS / VueJS</li>
+                <li>Next.js / ReactJS (Expert)</li>
+                <li>TypeScript / JavaScript (ES6+)</li>
                 <li>Server-Driven UI</li>
-                <li>State Management (Bloc/Riverpod)</li>
+                <li>State Management (Redux Toolkit)</li>
+                <li>Flutter</li>
               </ul>
             </div>
             <div class="skill-card">
@@ -155,6 +157,7 @@
               <ul>
                 <li>Go (Golang) / Python</li>
                 <li>Node.js / NestJS / ExpressJS</li>
+                <li>PostgreSQL / MySQL / SQLite</li>
                 <li>MongoDB / Firebase</li>
                 <li>RESTful API Design</li>
               </ul>
@@ -165,7 +168,7 @@
               <ul>
                 <li>Git / GitHub</li>
                 <li>Docker / Kubernetes</li>
-                <li>TypeScript / JavaScript (ES6+)</li>
+                <li>AI / Local LLM / RAG (Ollama)</li>
                 <li>JS Tools (Vite / Webpack / NPM)</li>
                 <li>Agile / Scrum</li>
               </ul>
@@ -179,6 +182,58 @@
         <div class="container">
           <h2 class="section-title" data-i18n="section.projects">Featured Projects</h2>
           <div class="projects-grid">
+            <!-- Project: Local AI RAG Chatbot (Satun PAO) -->
+            <article class="project-card">
+              <div class="project-image project-image--placeholder">
+                <span class="material-symbols-outlined" aria-hidden="true">smart_toy</span>
+              </div>
+              <div class="project-content">
+                <h3 data-i18n="projects.ragChatbot.title">
+                  Local AI RAG Chatbot for Government Website
+                </h3>
+                <span class="project-role" data-i18n="projects.ragChatbot.role"
+                  >Full-stack Developer</span
+                >
+                <p data-i18n="projects.ragChatbot.desc">
+                  <strong>Built an AI chatbot for a government organization's website</strong>,
+                  powered by a local LLM via Ollama with Retrieval-Augmented Generation (RAG) to
+                  answer questions from the organization's own data without sending it to external
+                  AI services. Backend built with Node.js and Express, with data stored in MySQL.
+                </p>
+                <div class="tech-stack">
+                  <span data-i18n="projects.ragChatbot.tech.1">Node.js</span>
+                  <span data-i18n="projects.ragChatbot.tech.2">Express</span>
+                  <span data-i18n="projects.ragChatbot.tech.3">Ollama</span>
+                  <span data-i18n="projects.ragChatbot.tech.4">Local LLM</span>
+                  <span data-i18n="projects.ragChatbot.tech.5">RAG</span>
+                  <span data-i18n="projects.ragChatbot.tech.6">MySQL</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project: Tourism Promotion CMS (Satun PAO) -->
+            <article class="project-card">
+              <div class="project-image project-image--placeholder">
+                <span class="material-symbols-outlined" aria-hidden="true">travel_explore</span>
+              </div>
+              <div class="project-content">
+                <h3 data-i18n="projects.tourismCms.title">Tourism Promotion CMS</h3>
+                <span class="project-role" data-i18n="projects.tourismCms.role"
+                  >Full-stack Developer</span
+                >
+                <p data-i18n="projects.tourismCms.desc">
+                  <strong>Developed a content management system with Next.js</strong> for creating
+                  and publishing content that promotes local tourist attractions, with MySQL as the
+                  data store.
+                </p>
+                <div class="tech-stack">
+                  <span data-i18n="projects.tourismCms.tech.1">Next.js</span>
+                  <span data-i18n="projects.tourismCms.tech.2">MySQL</span>
+                  <span data-i18n="projects.tourismCms.tech.3">CMS</span>
+                </div>
+              </div>
+            </article>
+
             <!-- Project 1: JodNid (LINE chat bot for expenses) -->
             <article class="project-card" id="project-jodnid">
               <div class="project-image">
@@ -260,6 +315,28 @@
                   <span data-i18n="projects.autoh.tech.4">Subprocess</span>
                   <span data-i18n="projects.autoh.tech.5">psutil</span>
                   <span data-i18n="projects.autoh.tech.6">System Hooks</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project: Car Detection Script (Satun PAO lab) -->
+            <article class="project-card">
+              <div class="project-image project-image--placeholder">
+                <span class="material-symbols-outlined" aria-hidden="true">directions_car</span>
+              </div>
+              <div class="project-content">
+                <h3 data-i18n="projects.carDetection.title">Car Detection Script (Lab)</h3>
+                <span class="project-role" data-i18n="projects.carDetection.role"
+                  >Python Developer</span
+                >
+                <p data-i18n="projects.carDetection.desc">
+                  <strong>An experimental Python script that detects cars</strong> and records
+                  detection results in a SQLite database for further analysis.
+                </p>
+                <div class="tech-stack">
+                  <span data-i18n="projects.carDetection.tech.1">Python</span>
+                  <span data-i18n="projects.carDetection.tech.2">SQLite</span>
+                  <span data-i18n="projects.carDetection.tech.3">Computer Vision</span>
                 </div>
               </div>
             </article>
@@ -371,31 +448,49 @@
           <div class="timeline">
             <div class="timeline-item">
               <div class="timeline-dot"></div>
-              <div class="timeline-date" data-i18n="experience.current.date">
-                Jan 2025 - Present
+              <div class="timeline-date" data-i18n="experience.satunPao.date">
+                July 2026 - Present
               </div>
               <div class="timeline-content">
-                <h3 data-i18n="experience.current.title">
-                  Front-end Developer (Flutter Specialist)
-                </h3>
-                <h4 data-i18n="experience.current.company">Nicetynine</h4>
-                <p data-i18n="experience.current.p1">
-                  Leading the frontend development of enterprise-scale applications using Flutter.
-                  Architecting Server-Driven UI systems and collaborating with cross-functional
-                  teams to deliver high-quality software solutions.
+                <h3 data-i18n="experience.satunPao.title">Assistant Computer Technical Officer</h3>
+                <h4 data-i18n="experience.satunPao.company">
+                  Satun Provincial Administrative Organization
+                </h4>
+                <p data-i18n="experience.satunPao.p1">
+                  Developing AI and web solutions for the organization, including a RAG chatbot
+                  powered by a local LLM (Ollama) on the organization's website, a Next.js CMS for
+                  promoting local tourist attractions, and an experimental Python script for car
+                  detection.
                 </p>
               </div>
             </div>
-            <!-- Add previous experience here if available -->
             <div class="timeline-item">
               <div class="timeline-dot"></div>
-              <div class="timeline-date" data-i18n="experience.prev.date">Previous</div>
+              <div class="timeline-date" data-i18n="experience.tcc.date">April 2026 - June 2026</div>
               <div class="timeline-content">
-                <h3 data-i18n="experience.prev.title">Internship</h3>
-                <h4 data-i18n="experience.prev.company">Company Name</h4>
-                <p data-i18n="experience.prev.p1">
-                  Gained hands-on experience in software development lifecycles and contributed to
-                  real-world projects.
+                <h3 data-i18n="experience.tcc.title">Full-stack Developer</h3>
+                <h4 data-i18n="experience.tcc.company">TCC TEchnology and digital</h4>
+                <p data-i18n="experience.tcc.p1">
+                  Architected and implemented end-to-end solutions, simultaneously developing both
+                  backend and frontend systems while designing feature-specific architectures and
+                  comprehensive system workflows.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date" data-i18n="experience.nicetynine.date">
+                Jan 2025 - March 2026
+              </div>
+              <div class="timeline-content">
+                <h3 data-i18n="experience.nicetynine.title">
+                  Front-end Developer (Flutter Specialist)
+                </h3>
+                <h4 data-i18n="experience.nicetynine.company">Nicetynine</h4>
+                <p data-i18n="experience.nicetynine.p1">
+                  Leading the frontend development of enterprise-scale applications using Flutter.
+                  Architecting Server-Driven UI systems and collaborating with cross-functional
+                  teams to deliver high-quality software solutions.
                 </p>
               </div>
             </div>

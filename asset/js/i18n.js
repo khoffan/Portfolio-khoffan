@@ -25,8 +25,8 @@
       about: {
         name: "Khoffan Leemanan",
         degree: "Computer Engineering, Prince of Songkla University",
-        p1: "I am a Computer Engineering graduate from Prince of Songkla University with a passion for building robust software solutions. Currently working as a Front-end Developer (Flutter Specialist), I focus on designing system architectures that are not only functional but also maintainable and scalable.",
-        p2: "My expertise lies in Server-Driven UI (SDUI), ensuring seamless updates and flexibility across platforms. I also possess strong backend skills in Go (Golang) and MongoDB, allowing me to contribute effectively to full-stack development and API schema design.",
+        p1: "I am a Computer Engineering graduate from Prince of Songkla University with a passion for building robust software solutions. As a Full-stack Developer, I specialize in modern JavaScript and TypeScript web development with Next.js, React, and Node.js, designing system architectures that are functional, maintainable, and scalable.",
+        p2: "I actively use AI both to accelerate my development workflow and to build smarter products, from a RAG chatbot powered by a local LLM (Ollama) to NLP and OCR features in real applications. I also have a solid background in Server-Driven UI (SDUI), backend development with Go and MongoDB, and cross-platform apps with Flutter.",
         skillsHeader: "Skills & Tools",
       },
       skills: {
@@ -60,6 +60,39 @@
         },
       },
       projects: {
+        ragChatbot: {
+          title: "Local AI RAG Chatbot for Government Website",
+          role: "Full-stack Developer",
+          desc: "Built an AI chatbot for a government organization's website, powered by a local LLM via Ollama with Retrieval-Augmented Generation (RAG) to answer questions from the organization's own data without sending it to external AI services. Backend built with Node.js and Express, with data stored in MySQL.",
+          tech: {
+            1: "Node.js",
+            2: "Express",
+            3: "Ollama",
+            4: "Local LLM",
+            5: "RAG",
+            6: "MySQL",
+          },
+        },
+        tourismCms: {
+          title: "Tourism Promotion CMS",
+          role: "Full-stack Developer",
+          desc: "Developed a content management system with Next.js for creating and publishing content that promotes local tourist attractions, with MySQL as the data store.",
+          tech: {
+            1: "Next.js",
+            2: "MySQL",
+            3: "CMS",
+          },
+        },
+        carDetection: {
+          title: "Car Detection Script (Lab)",
+          role: "Python Developer",
+          desc: "An experimental Python script that detects cars and records detection results in a SQLite database for further analysis.",
+          tech: {
+            1: "Python",
+            2: "SQLite",
+            3: "Computer Vision",
+          },
+        },
         cms: {
           title: "Custom CMS with Server-Driven UI",
           role: "Lead Front-end Developer",
@@ -164,13 +197,19 @@
         },
         roleDate: "Front-end Developer (Jan 2025 - Present)",
         p1: "Core Responsibilities: Leading frontend development, designing business logic and schemas, and building web applications with Flutter.",
-        current: {
-          date: "April 2026 - Present",
+        satunPao: {
+          date: "July 2026 - Present",
+          title: "Assistant Computer Technical Officer",
+          company: "Satun Provincial Administrative Organization",
+          p1: "Developing AI and web solutions for the organization, including a RAG chatbot powered by a local LLM (Ollama) on the organization's website, a Next.js CMS for promoting local tourist attractions, and an experimental Python script for car detection.",
+        },
+        tcc: {
+          date: "April 2026 - June 2026",
           title: "Full-stack Developer",
           company: "TCC TEchnology and digital",
           p1: "Architected and implemented end-to-end solutions, simultaneously developing both backend and frontend systems while designing feature-specific architectures and comprehensive system workflows.",
         },
-        prev: {
+        nicetynine: {
           date: "Jan 2025 - March 2026",
           title: "Front-end Developer (Flutter Specialist)",
           company: "Nicetynine",
@@ -232,11 +271,23 @@
       about: {
         name: "Khoffan Leemanan",
         degree: "สาขาวิศวกรรมคอมพิวเตอร์, มหาวิทยาลัยสงขลานครินทร์",
-        p1: "ผมจบวิศวกรรมคอมพิวเตอร์จากมหาวิทยาลัยสงขลานครินทร์ มีความหลงใหลในการสร้างซอฟต์แวร์ที่แข็งแรง ปัจจุบันทำงานเป็น Front-end Developer (Flutter Specialist) มุ่งออกแบบสถาปัตยกรรมระบบที่ใช้งานได้จริงและดูแลรักษาง่าย",
-        p2: "ความเชี่ยวชาญของผมคือ Server-Driven UI (SDUI) ช่วยให้การอัปเดตเป็นไปอย่างราบรื่นและยืดหยุ่นบนหลายแพลตฟอร์ม นอกจากนี้มีทักษะด้าน backend ใน Go และ MongoDB",
+        p1: "ผมจบวิศวกรรมคอมพิวเตอร์จากมหาวิทยาลัยสงขลานครินทร์ มีความหลงใหลในการสร้างซอฟต์แวร์ที่แข็งแรง ในฐานะ Full-stack Developer ผมเชี่ยวชาญการพัฒนาเว็บด้วย JavaScript และ TypeScript โดยเฉพาะ Next.js, React และ Node.js พร้อมออกแบบสถาปัตยกรรมระบบที่ใช้งานได้จริง ดูแลรักษาง่าย และรองรับการขยายตัว",
+        p2: "ผมนำ AI มาใช้ทั้งเพื่อเร่งกระบวนการพัฒนาและสร้างผลิตภัณฑ์ที่ชาญฉลาดขึ้น ตั้งแต่แชทบอท RAG ที่ทำงานด้วย Local LLM (Ollama) ไปจนถึงฟีเจอร์ NLP และ OCR ในแอปพลิเคชันจริง นอกจากนี้ยังมีพื้นฐานด้าน Server-Driven UI (SDUI), การพัฒนา backend ด้วย Go และ MongoDB รวมถึงการพัฒนาแอปข้ามแพลตฟอร์มด้วย Flutter",
         skillsHeader: "ทักษะ และ เครื่องมือ",
       },
       projects: {
+        ragChatbot: {
+          title: "แชทบอท AI (Local LLM + RAG) สำหรับเว็บไซต์หน่วยงาน",
+          desc: "พัฒนาแชทบอท AI บนเว็บไซต์ของหน่วยงานราชการ ทำงานด้วย Local LLM ผ่าน Ollama ร่วมกับเทคนิค RAG (Retrieval-Augmented Generation) เพื่อตอบคำถามจากข้อมูลของหน่วยงานเอง โดยไม่ต้องส่งข้อมูลออกไปยังบริการ AI ภายนอก พัฒนา backend ด้วย Node.js และ Express พร้อมจัดเก็บข้อมูลใน MySQL",
+        },
+        tourismCms: {
+          title: "ระบบ CMS ประชาสัมพันธ์สถานที่ท่องเที่ยว",
+          desc: "พัฒนาระบบจัดการเนื้อหา (CMS) ด้วย Next.js สำหรับสร้างและเผยแพร่คอนเทนต์ประชาสัมพันธ์สถานที่ท่องเที่ยว โดยใช้ MySQL เป็นฐานข้อมูล",
+        },
+        carDetection: {
+          title: "สคริปต์ตรวจจับรถยนต์ (Lab)",
+          desc: "สคริปต์ Python เชิงทดลองสำหรับตรวจจับรถยนต์ และบันทึกผลการตรวจจับลงฐานข้อมูล SQLite เพื่อนำไปวิเคราะห์ต่อ",
+        },
         cms: {
           title: "Custom CMS with Server-Driven UI",
           desc: "ออกแบบสถาปัตยกรรม CMS โดยใช้ Flutter Web, Go และ MongoDB พร้อมพัฒนาโปรโตคอล Server-Driven UI (JSON-to-Widget) ให้ผู้ดูแลระบบแก้ไขหน้าและตรรกะได้แบบเรียลไทม์",
@@ -288,13 +339,19 @@
         },
         roleDate: "นักพัฒนา Front-end (ม.ค. 2025 - ปัจจุบัน)",
         p1: "ความรับผิดชอบหลัก: นำการพัฒนาส่วนหน้า ออกแบบ Business Logic และ Schema และพัฒนา Web Application ด้วย Flutter",
-        current: {
-          date: "April 2026 - Present",
+        satunPao: {
+          date: "July 2026 - Present",
+          title: "ผู้ช่วยนักวิชาการคอมพิวเตอร์",
+          company: "องค์การบริหารส่วนจังหวัดสตูล (อบจ.สตูล)",
+          p1: "พัฒนาโซลูชัน AI และเว็บแอปพลิเคชันให้กับหน่วยงาน ได้แก่ แชทบอท RAG ที่ทำงานด้วย Local LLM (Ollama) บนเว็บไซต์ของหน่วยงาน ระบบ CMS ด้วย Next.js สำหรับประชาสัมพันธ์สถานที่ท่องเที่ยว และสคริปต์ Python เชิงทดลองสำหรับตรวจจับรถยนต์",
+        },
+        tcc: {
+          date: "April 2026 - June 2026",
           title: "Full-stack Developer",
           company: "TCC TEchnology and digital",
           p1: "ออกแบบสถาปัตยกรรมและพัฒนาโครงสร้างระบบแบบครบวงจร (End-to-End) โดยรับหน้าที่ควบคุมทั้งระบบหลังบ้าน (Backend) และหน้าบ้าน (Frontend) ควบคู่ไปกับการวางระบบโครงสร้าง (Architecture) ของแต่ละฟีเจอร์ ตลอดจนการออกแบบผังการทำงาน (Workflow) ทั้งหมดของระบบ",
         },
-        prev: {
+        nicetynine: {
           date: "Jan 2025 - March 2026",
           title: "Front-end Developer (Flutter Specialist)",
           company: "Nicetynine",
