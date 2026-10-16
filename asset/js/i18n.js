@@ -93,28 +93,6 @@
             3: "Computer Vision",
           },
         },
-        cms: {
-          title: "Custom CMS with Server-Driven UI",
-          role: "Lead Front-end Developer",
-          desc: "Designed an innovative CMS architecture using Flutter Web, Go, and MongoDB. Implemented a Server-Driven UI Protocol (JSON-to-Widget) that allows administrators to modify layouts and logic in real-time, effectively reducing the deployment cycle.",
-          tech: {
-            1: "Flutter Web",
-            2: "Go",
-            3: "MongoDB",
-            4: "SDUI",
-          },
-        },
-        blog: {
-          title: "Interactive Web Blog Platform",
-          role: "Full-stack JavaScript Developer",
-          desc: "Built a complete content management ecosystem using Node.js and React/Vue with real-time updates, responsive reading experience, and a scalable backend.",
-          tech: {
-            1: "Node.js",
-            2: "ReactJS/VueJS",
-            3: "MongoDB",
-            4: "Express/Nest",
-          },
-        },
         autoh: {
           title: "AutoH – Workspace Automation Engine",
           role: "Python Developer",
@@ -126,27 +104,6 @@
             4: "Subprocess",
             5: "psutil",
             6: "System Hooks",
-          },
-        },
-        pos: {
-          title: "High-Performance POS System",
-          role: "Full-stack Developer",
-          desc: "Engineered a robust transaction system capable of handling high-concurrency requests using Go goroutines and optimized MongoDB schemas to ensure sub-200ms response times.",
-          tech: {
-            1: "Go",
-            2: "MongoDB",
-            3: "Flutter",
-            4: "WebSocket",
-          },
-        },
-        health: {
-          title: "Health Care Management Platform",
-          role: "Front-end Developer",
-          desc: "Architected a precision-critical UI and responsive interfaces ensuring data integrity for personal health records, with tight API contracts and type-safe models.",
-          tech: {
-            1: "Flutter",
-            2: "API Design",
-            3: "Data Visualization",
           },
         },
         molldini: {
@@ -222,12 +179,11 @@
       },
       contactSection: {
         title: "Let's Talk",
-        description:
-          "Open for opportunities in Senior Full-stack Development or Flutter Specialist roles.",
+        description: "Open to Full-stack Developer roles focused on Next.js, Node.js, and AI.",
       },
       alerts: { formSuccess: "Saved successfully!", formError: "An error occurred!" },
       status: { sending: "Sending..." },
-      footer: { copyright: "© 2025 Khoffan Leemanan. All Rights Reserved." },
+      footer: { copyright: "Khoffan Leemanan. All Rights Reserved." },
       social: { github: "GitHub", facebook: "Facebook" },
       meta: {
         title: "Khoffan Leemanan | Full-stack Developer · Next.js & AI",
@@ -288,25 +244,9 @@
           title: "สคริปต์ตรวจจับรถยนต์ (Lab)",
           desc: "สคริปต์ Python เชิงทดลองสำหรับตรวจจับรถยนต์ และบันทึกผลการตรวจจับลงฐานข้อมูล SQLite เพื่อนำไปวิเคราะห์ต่อ",
         },
-        cms: {
-          title: "Custom CMS with Server-Driven UI",
-          desc: "ออกแบบสถาปัตยกรรม CMS โดยใช้ Flutter Web, Go และ MongoDB พร้อมพัฒนาโปรโตคอล Server-Driven UI (JSON-to-Widget) ให้ผู้ดูแลระบบแก้ไขหน้าและตรรกะได้แบบเรียลไทม์",
-        },
-        blog: {
-          title: "Interactive Web Blog Platform",
-          desc: "พัฒนาแพลตฟอร์มบล็อกที่ครบวงจร โดยใช้ Node.js และ React/Vue มีการอัปเดตแบบเรียลไทม์และประสบการณ์อ่านที่ตอบสนองได้ดี",
-        },
         autoh: {
           title: "AutoH – Workspace Automation Engine",
           desc: "พัฒนาเครื่องมืออัตโนมัติบน Windows สำหรับปรับแต่งสภาพแวดล้อมการทำงานด้วย Global Hotkeys รองรับการสลับโหมด ทรัพยากรแยก subprocess และกลไก debounce",
-        },
-        pos: {
-          title: "High-Performance POS System",
-          desc: "ออกแบบระบบธุรกรรมที่รองรับการร้องขอความพร้อมกันสูง โดยใช้ Go goroutines และปรับโครงสร้าง MongoDB ให้ตอบสนองรวดเร็ว",
-        },
-        health: {
-          title: "Health Care Management Platform",
-          desc: "ออกแบบ UI และระบบจัดการข้อมูลสุขภาพที่เน้นความถูกต้องของข้อมูลและการปฏิบัติตามมาตรฐานการออกแบบ",
         },
         molldini: {
           title: "Multi-Merchant E-Commerce Platform",
@@ -358,17 +298,17 @@
           p1: "เป็นผู้นำในการพัฒนาฝั่งหน้าบ้าน (Frontend) ของแอปพลิเคชันระดับองค์กร (Enterprise-scale) ด้วย Flutter ออกแบบสถาปัตยกรรมระบบ Server-Driven UI และร่วมมือกับทีมบริการจัดการข้ามสายงาน (Cross-functional) เพื่อส่งมอบโซลูชันซอฟต์แวร์ที่มีคุณภาพสูง",
         },
       },
-      contact: Object.assign({}, { mailSubject: "ติดต่อเรื่องงาน" }),
       contact: {
+        mailSubject: "ติดต่อเรื่องงาน",
         placeholder: { name: "ชื่อของคุณ", email: "อีเมลของคุณ", message: "ข้อความของคุณ" },
       },
       contactSection: {
         title: "ทักทาย",
-        description: "เปิดรับโอกาสในตำแหน่ง Senior Full-stack Developer หรือ Flutter Specialist",
+        description: "เปิดรับโอกาสในตำแหน่ง Full-stack Developer ที่เน้น Next.js, Node.js และ AI",
       },
       alerts: { formSuccess: "บันทึกข้อมูลเรียบร้อยแล้ว!", formError: "เกิดข้อผิดพลาด!" },
       status: { sending: "กำลังส่ง..." },
-      footer: { copyright: "© 2025 Khoffan Leemanan. สงวนลิขสิทธิ์." },
+      footer: { copyright: "Khoffan Leemanan. สงวนลิขสิทธิ์." },
       social: { github: "GitHub", facebook: "Facebook" },
       meta: {
         title: "Khoffan Leemanan | นักพัฒนา Full-stack · Next.js & AI",
@@ -432,17 +372,12 @@
       if (key) el.href = t(key);
     });
 
-    // mail subject helper for mail links (build Gmail compose URL)
+    // mail subject helper: add a translated subject to mailto links
     document.querySelectorAll("[data-i18n-mail-subject]").forEach((el) => {
       const key = el.getAttribute("data-i18n-mail-subject");
       if (key) {
-        try {
-          const subject = encodeURIComponent(t(key));
-          const to =
-            el.getAttribute("data-mail-to") || el.href.split("&to=")[1] || "khoffan222@gmail.com";
-          // fallback to a Gmail compose URL
-          el.href = `https://mail.google.com/mail/?view=cm&fs=1&to=khoffan222@gmail.com&su=${subject}`;
-        } catch (e) {}
+        const to = el.getAttribute("data-mail-to") || "khoffan222@gmail.com";
+        el.href = `mailto:${to}?subject=${encodeURIComponent(t(key))}`;
       }
     });
 

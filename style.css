@@ -258,6 +258,13 @@ nav {
   line-height: 1.1;
 }
 
+.name-th {
+  font-family: "Sarabun", "Outfit", sans-serif;
+  font-size: 1.25rem;
+  color: #a0aab5;
+  margin-bottom: 15px;
+}
+
 .typing-text {
   font-size: 2rem;
   color: #a0aab5;

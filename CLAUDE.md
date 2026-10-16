@@ -27,7 +27,7 @@ On `DOMContentLoaded`, `i18n.js` walks the DOM and overwrites content based on a
 
 - `data-i18n` → `textContent`
 - `data-i18n-placeholder`, `data-i18n-alt`, `data-i18n-title`, `data-i18n-href` → the matching attribute
-- `data-i18n-mail-subject` → rewrites `href` to a Gmail compose URL with a translated subject
+- `data-i18n-mail-subject` → rewrites `href` to `mailto:` with a translated subject (the HTML fallback is a plain `mailto:` link)
 - `meta.title` key → `document.title`
 
 Consequences when editing content:
@@ -38,7 +38,8 @@ Consequences when editing content:
 - Lookup order is `translations[locale]` → `translations.en` → the key string itself. The `th` dictionary intentionally omits many keys (e.g. project `role` and `tech.N`), which fall back to English. A typo'd key renders the raw key on the page.
 - When adding a new translatable element, add the key under `en` (required) and `th` (optional), then tag the element with `data-i18n="section.key"`.
 - Locale detection: `localStorage.locale` → browser language starting with `th` → `en`. `html[lang="th"]` switches the body font to Sarabun (see `style.css`).
-- In the `th` object, `contact` is declared twice; the second declaration wins, so the Thai `mailSubject` is lost and falls back to English.
+- The footer year is not translated: the inline script fills `#footer-year` with `new Date().getFullYear()`, and `footer.copyright` holds only the text after the year.
+- The hero shows the Thai name (`.name-th`, "ฆ๊อฟฟาน หลีมานัน") as plain HTML in both locales, so Google indexes it. Google only indexes the English render (there is no separate `/th` URL), so Thai words that should be searchable must appear in the HTML itself, not only in `th` translations or meta keywords.
 - Some translation groups (`purchase`, `portfolio`, `skilllevel`, `experience.bullets`, `pages`, `skills.*.items`) are leftovers from the older multi-page layout and aren't referenced by `index.html`.
 
 ### Project cards and external behavior
@@ -50,6 +51,18 @@ Consequences when editing content:
 ## Assets and SEO files
 
 - Images live under `image/` (`contents/` for project screenshots and the profile photo `รูปถ่าย.jpg`, `icon/` for favicons). The Thai filename is referenced by the hero `<img>`, and as an absolute percent-encoded URL by `og:image`, `twitter:image`, and the JSON-LD `image` in `<head>` — keep all of them in sync if renamed.
-- SEO lives in `<head>`: description/keywords, canonical URL, Open Graph/Twitter tags, and a schema.org `Person` JSON-LD block. The `<title>`, `og:title`, and `twitter:title` should match `meta.title` (en) in `i18n.js`, which overwrites `document.title` at runtime. Update `knowsAbout`/keywords when the skills or projects change, and bump `<lastmod>` in `sitemap.xml`.
+- SEO lives in `<head>`: description/keywords, canonical URL, Open Graph/Twitter tags, and a schema.org `Person` JSON-LD block. The `<title>`, `og:title`, and `twitter:title` should match `meta.title` (en) in `i18n.js`, which overwrites `document.title` at runtime. Update `knowsAbout`/keywords when the skills or projects change.
 - `KHOFFAN-resume-thai.pdf` is linked from the nav by filename; update the resume by replacing the file in place.
 - `robots.txt` and `sitemap.xml` hardcode the Vercel domain. `google69a3806d4f00fee6.html` is a Google Search Console verification file and must stay at the root unchanged.
+
+## Rule: after every content change
+
+When you change any visible content (roles, experience, projects, skills, contact info):
+
+1. Set `<lastmod>` in `sitemap.xml` to the date of the change.
+2. Keep `README.md` in sync with the site (role, experience, projects). The GitHub README is public, and Google and Gemini use it as a source alongside the site.
+3. Deploy to Vercel (commit and push), only when the user asks.
+4. Then remind the user to do these manual steps, which Claude cannot do:
+   - Search Console → URL Inspection → `https://portfolio-khoffan.vercel.app/` → Request Indexing.
+   - If `sitemap.xml` changed, resubmit it under Search Console → Sitemaps.
+   - If the role, experience, or skills changed, re-export `KHOFFAN-resume-thai.pdf` from its Google Docs source. It is a PDF, so it can't be edited here, and Google indexes it too.

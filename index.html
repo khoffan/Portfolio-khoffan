@@ -143,6 +143,7 @@
           <div class="hero-content">
             <span class="greeting" data-i18n="hero.greeting">Hello, I'm</span>
             <h1>Khoffan Leemanan</h1>
+            <p class="name-th" lang="th">ฆ๊อฟฟาน หลีมานัน</p>
             <h2 class="typing-text" data-i18n="hero.role">Full-Stack Developer</h2>
             <p data-i18n="hero.description">
               Specializing in Node.js, TypeScript, React, Next.js, and Python. I architect and
@@ -397,103 +398,6 @@
                 </div>
               </div>
             </article>
-
-            <!-- Project 4: POS -->
-            <article class="project-card">
-              <div class="project-image">
-                <img src="image/contents/pos-3.png" alt="POS System" />
-              </div>
-              <div class="project-content">
-                <h3 data-i18n="projects.pos.title">High-Performance POS System</h3>
-                <span class="project-role" data-i18n="projects.pos.role">Full-stack Developer</span>
-                <p data-i18n="projects.pos.desc">
-                  <strong>Engineered a robust Transaction System</strong>
-                  capable of handling high-concurrency requests using Go goroutines. Optimized
-                  MongoDB schemas for polymorphic product data, ensuring sub-200ms response times.
-                </p>
-                <div class="tech-stack">
-                  <span data-i18n="projects.pos.tech.1">Go</span>
-                  <span data-i18n="projects.pos.tech.2">MongoDB</span>
-                  <span data-i18n="projects.pos.tech.3">Flutter</span>
-                  <span data-i18n="projects.pos.tech.4">WebSocket</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 4: Healthcare -->
-            <article class="project-card">
-              <div class="project-image">
-                <img src="image/contents/happo.png" alt="Healthcare App" />
-              </div>
-              <div class="project-content">
-                <h3 data-i18n="projects.health.title">Health Care Management Platform</h3>
-                <span class="project-role" data-i18n="projects.health.role"
-                  >Front-end Developer</span
-                >
-                <p data-i18n="projects.health.desc">
-                  <strong>Architected a precision-critical UI and responsive UI</strong>
-                  ensuring 100% data integrity for personal health records. Collaborated closely
-                  with backend teams to design strict API Contracts and Type-Safe Data Models.
-                </p>
-                <div class="tech-stack">
-                  <span data-i18n="projects.health.tech.1">Flutter</span>
-                  <span data-i18n="projects.health.tech.2">API Design</span>
-                  <span data-i18n="projects.health.tech.3">Data Visualization</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 6: Web Blog (New) -->
-            <article class="project-card">
-              <div class="project-image">
-                <img src="image/contents/blogpostlogo.png" alt="Web Blog Platform" />
-              </div>
-              <div class="project-content">
-                <h3 data-i18n="projects.blog.title">Interactive Web Blog Platform</h3>
-                <span class="project-role" data-i18n="projects.blog.role"
-                  >Full-stack JavaScript Developer</span
-                >
-                <p data-i18n="projects.blog.desc">
-                  <strong>Built a complete content management ecosystem</strong>
-                  leveraging the full potential of the JavaScript stack. Developed a scalable
-                  backend with
-                  <strong>Node.js (Express/NestJS)</strong> and a dynamic frontend using
-                  <strong>ReactJS/VueJS</strong>, featuring real-time content updates and a
-                  responsive reading experience.
-                </p>
-                <div class="tech-stack">
-                  <span data-i18n="projects.blog.tech.1">Node.js</span>
-                  <span data-i18n="projects.blog.tech.2">ReactJS/VueJS</span>
-                  <span data-i18n="projects.blog.tech.3">MongoDB</span>
-                  <span data-i18n="projects.blog.tech.4">Express/Nest</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- Project 7: CMS -->
-            <article class="project-card">
-              <div class="project-image">
-                <img src="image/contents/cms-2.png" alt="Custom CMS Project" />
-              </div>
-              <div class="project-content">
-                <h3 data-i18n="projects.cms.title">Custom CMS with Server-Driven UI</h3>
-                <span class="project-role" data-i18n="projects.cms.role"
-                  >Lead Front-end Developer</span
-                >
-                <p data-i18n="projects.cms.desc">
-                  <strong>Designed an innovative CMS architecture</strong> using Flutter Web, Go,
-                  and MongoDB. Implemented a Server-Driven UI Protocol (JSON-to-Widget) that allows
-                  administrators to modify layouts and logic in real-time, effectively reducing the
-                  deployment cycle.
-                </p>
-                <div class="tech-stack">
-                  <span data-i18n="projects.cms.tech.1">Flutter Web</span>
-                  <span data-i18n="projects.cms.tech.2">Go</span>
-                  <span data-i18n="projects.cms.tech.3">MongoDB</span>
-                  <span data-i18n="projects.cms.tech.4">SDUI</span>
-                </div>
-              </div>
-            </article>
           </div>
         </div>
       </section>
@@ -563,11 +467,11 @@
             <div class="contact-info">
               <h3 data-i18n="contactSection.title">Let's Talk</h3>
               <p data-i18n="contactSection.description">
-                Open for opportunities in Senior Full-stack Development or Flutter Specialist roles.
+                Open to Full-stack Developer roles focused on Next.js, Node.js, and AI.
               </p>
               <div class="info-item">
                 <span class="material-symbols-outlined">email</span>
-                <a href="#" data-i18n-mail-subject="contact.mailSubject" target="_blank"
+                <a href="mailto:khoffan222@gmail.com" data-i18n-mail-subject="contact.mailSubject"
                   >khoffan222@gmail.com</a
                 >
               </div>
@@ -625,12 +529,17 @@
 
     <footer>
       <div class="container">
-        <p data-i18n="footer.copyright">&copy; 2025 Khoffan Leemanan. All Rights Reserved.</p>
+        <p>
+          &copy; <span id="footer-year">2026</span>
+          <span data-i18n="footer.copyright">Khoffan Leemanan. All Rights Reserved.</span>
+        </p>
       </div>
     </footer>
 
     <script src="asset/js/i18n.js"></script>
     <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
+
       // Simple Mobile Menu Toggle
       const project = document.getElementById("project-molldini");
       const projectAutoh = document.getElementById("project-autoh");
